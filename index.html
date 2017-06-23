@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Moo?</title>
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body>
+		<div class="q" id="sumofalist">
+			<div class="h">
+				<a href="#sumofalist">Sum of a list</a>
+			</div>
+			<div class="d">
+				Calculate the sum of a list.
+			</div>
+			<div class="a">
+				The sum of an empty list is generally defined as 0. 
+			</div>
+			<div class="s">
+<b>Iterative</b>:
+<pre class="c py">
+def sum(xs):
+    if len(xs) == 0:
+        return 0
+
+    result = 0
+
+    for x in xs:
+        result += x
+
+    return result
+</pre>
+			</div>
+			<div class="s">
+<b>Concatenative</b>:<br> The sum of the list is a reduction of that list using the addition function with an initial value
+of zero. <br><br>
+<pre class="c py">
+sum := reduce {add} 0
+</pre>
+			</div>
+		</div>
+	</body>
+</html>

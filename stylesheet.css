@@ -1,0 +1,77 @@
+html {
+	font-size: 1em;
+	font-family: sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 0.5rem;
+}
+
+.d::before {
+	content: 'Description:';
+	font-weight: bold;
+}
+
+.a::before {
+	content: 'Considerations:';
+	font-weight: bold;
+}
+
+.q {
+	margin-left: 1rem;
+	max-width: 60rem;
+}
+
+.q .h {
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: serif;
+	text-transform: uppercase;
+}
+
+.q .h a, .q .h a:visited, .q .h a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.q .d {
+	margin-left: 1rem;
+}
+
+.q .a {
+	margin-left: 1rem;
+}
+
+.q .s {
+	margin-left: 1.25rem;
+}
+
+.c {
+	background-color: lightyellow;
+	padding: 0.5rem;
+	width: auto;
+	max-width: 40rem;
+	font-family: monospace, monospace;
+	border-left: solid 0.2rem black;
+}
+
+.a + .s {
+	margin-top: 1rem;
+}
+
+.h + .d {
+	margin-top: 1rem;
+}
+
+.d + .a {
+	margin-top: 1rem;
+}
+
+.s + .s {
+	margin-top: 1rem;
+}
